@@ -1,0 +1,138 @@
+body .wrapper .container-fluid {
+	margin: 0px auto; padding: 0px;
+}
+body .wrapper .container {
+	margin: 0px auto; padding: 0px;
+}
+.lead {
+	font-size: 18px; font-weight: 400;
+}
+.intro-header {
+	background: url("../img/openjustice-intro-header1.jpg") no-repeat center / cover; text-align: center; padding-top: 85px; padding-bottom: 50px;
+}
+.intro-message {
+	margin: 2% 0px 18%; padding: 5% 0px 5% 41%; text-align: left; color: rgb(255, 255, 255); font-size: 1.5em; position: relative; text-shadow: 1px 1px #000;
+}
+.intro-message > h1 {
+	margin: 0px; color: rgb(255, 255, 255); text-transform: uppercase; font-size: 2em; text-shadow: 1px 1px #000;
+}
+.content-section-a {
+	padding: 50px 0px; font-size: 1.1em; background-color: rgb(245, 245, 245);
+}
+.content-section-b {
+	padding: 50px 0px; font-size: 1.1em; border-top-color: rgb(221, 221, 221); border-bottom-color: rgb(221, 221, 221); border-top-width: 5px; border-bottom-width: 5px; border-top-style: solid; border-bottom-style: solid;
+}
+.content-section-c {
+	padding: 50px 0px; font-size: 1.1em; background-color: rgb(134, 146, 165);
+}
+.content-section-a h2.sect-heading {
+	text-align: center; color: rgb(39, 55, 79); text-transform: uppercase; font-size: 2em; font-weight: 700; margin-top: 10px; margin-bottom: 10px;
+}
+.content-section-b h2.sect-heading {
+	text-align: center; color: rgb(39, 55, 79); text-transform: uppercase; font-size: 2em; font-weight: 700; margin-top: 10px; margin-bottom: 10px;
+}
+.content-section-c h2.sect-heading {
+	text-align: center; color: rgb(39, 55, 79); text-transform: uppercase; font-size: 2em; font-weight: 700; margin-top: 10px; margin-bottom: 10px;
+}
+.no-top-border {
+	border-top-color: currentColor; border-top-width: medium; border-top-style: none;
+}
+.no-bottom-border {
+	border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none;
+}
+.sect-description {
+	text-align: center; margin-bottom: 50px;
+}
+.section-heading {
+	margin-bottom: 30px;
+}
+.panel-primary > .panel-heading {
+	border-radius: 0px; border: currentColor; border-image: none; color: rgb(255, 255, 255); background-color: rgb(39, 55, 79);
+}
+.panel-primary {
+	border-color: rgb(39, 55, 79);
+}
+.data-sections .panel-primary {
+	font-size: 1em;
+}
+.data-sections .panel-primary > .panel-heading h2 {
+	padding: 15px 0px 0px; text-transform: uppercase; font-size: 1.3em; font-weight: 700;
+}
+.data-sections .panel-primary > .panel-heading h2 a {
+	color: rgb(255, 255, 255);
+}
+.data-sections .panel-primary > .panel-heading h2 a:hover {
+	text-decoration: underline;
+}
+.data-sections .panel-primary > .panel-body {
+	background: rgb(39, 55, 79); color: rgb(255, 255, 255);
+}
+.data-sections .panel-primary > .panel-footer {
+	background: rgb(255, 255, 255); text-align: center; font-size: 0.9em;
+}
+.dataset-icon-bg {
+	background: none; margin: 20px auto; padding: 10px; border-radius: 50px; border: 1px solid rgb(39, 55, 79); border-image: none; width: 90px;
+}
+.dataset-icon-bg:hover {
+	background: rgb(221, 221, 221);
+}
+.iconic {
+	max-width: 70px;
+}
+.mid-link-wrapper {
+	border: currentColor; border-image: none;
+}
+.fa {
+	color: rgb(39, 55, 79); padding-top: 15px; font-size: 3em !important;
+}
+.data-stories .list-group {
+	display: none;
+}
+.data-exploration .list-group {
+	display: none;
+}
+.community .list-group {
+	display: none;
+}
+@media all and (max-width:991px)
+{
+.img-section {
+	display: none !important;
+}
+.data-stories .list-group {
+	display: block !important;
+}
+.data-exploration .list-group {
+	display: block !important;
+}
+.community .list-group {
+	display: block !important;
+}
+}
+@media all and (max-width:767px)
+{
+.intro-message {
+	padding-bottom: 15%;
+}
+.intro-message > h1 {
+	font-size: 1.5em;
+}
+ul.intro-social-buttons > li {
+	padding: 0px; margin-bottom: 20px; display: block;
+}
+ul.intro-social-buttons > li:last-child {
+	margin-bottom: 0px;
+}
+.intro-divider {
+	width: 100%;
+}
+.img-section {
+	display: none !important;
+}
+body .wrapper .container {
+	padding: 0px 15px;
+}
+.container {
+	padding: 0px 15px;
+}
+}
