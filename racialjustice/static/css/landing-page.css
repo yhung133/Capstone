@@ -8,7 +8,8 @@ body .wrapper .container {
 	font-size: 18px; font-weight: 400;
 }
 .intro-header {
-	background: url("../img/openjustice-intro-header1.jpg") no-repeat center / cover; text-align: center; padding-top: 85px; padding-bottom: 50px;
+	/*background: url("../img/openjustice-intro-header1.jpg") no-repeat center / cover;*/
+    text-align: center; padding-top: 85px; padding-bottom: 50px;
 }
 .intro-message {
 	margin: 2% 0px 18%; padding: 5% 0px 5% 41%; text-align: left; color: rgb(255, 255, 255); font-size: 1.5em; position: relative; text-shadow: 1px 1px #000;
