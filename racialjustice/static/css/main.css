@@ -610,21 +610,6 @@ p {
 .landing.jumbotron {
 	margin: 7em 0px 4em; padding: 3em; color: rgb(255, 255, 255);
 }
-.stories.landing.jumbotron {
-	background: url("../img/data-stories-header-img.jpg") no-repeat bottom / cover;
-}
-.exploration.landing.jumbotron {
-	background: url("../img/data-exploration-header-img.jpg") no-repeat bottom / cover;
-}
-.data.landing.jumbotron {
-	background: url("../img/data-portal-header-img.jpg") no-repeat center / cover;
-}
-.resources.landing.jumbotron {
-	background: url("../img/data-resources-header-img.jpg") no-repeat center / cover;
-}
-.community.landing.jumbotron {
-	background: url("../img/openjustice-intro-header2.jpg") no-repeat center / cover;
-}
 .landing.jumbotron h1 {
 	padding-left: 3em; text-shadow: 1px 1px #000;
 }
