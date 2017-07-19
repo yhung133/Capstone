@@ -11,6 +11,8 @@ import racialjustice.views
 
 urlpatterns = [
     url(r'^$', racialjustice.views.index, name='index'),
+    url(r'^datavisual', racialjustice.views.datavisual, name='datavisual'),
+    url(r'^police', racialjustice.views.police, name='police'),
     url(r'^db', racialjustice.views.db, name='db'),
     url(r'^admin/', include(admin.site.urls)),
 ]

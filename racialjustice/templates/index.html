@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Yuyan">
     <!---<link rel="icon" href="../../favicon.ico"> -->
 
 
@@ -21,8 +21,8 @@
 
     <!-- Bootstrap core CSS -->
     {% load staticfiles %}
-    <link href="{% static 'css/bootstrap.min.css'%}" rel="stylesheet">
     <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link href="{% static 'css/carousel.css'%}" rel="stylesheet">
 
     <!-- CSS for four icons -->
@@ -50,7 +50,7 @@
       </ol>
       <!-- Slide 1 --> 
       <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active">
+        <div class="carousel-item active item">
           <img class="first-slide" src="{% static 'img/champaign.jpg'%}" alt="First slide">
           <div class="container">
             <div class="carousel-caption d-none d-md-block text-left">
@@ -65,7 +65,7 @@
           </div>
         </div>        
        <!-- Slide 2 --> 
-        <div class="carousel-item">
+        <div class="carousel-item item">
           <img class="second-slide" src="{% static 'img/criminaljustice.jpg'%}" alt="Second slide">
           <div class="container">
             <div class="carousel-caption d-none d-md-block">
@@ -80,7 +80,7 @@
           </div>
         </div>
         <!-- Slide 3 --> 
-        <div class="carousel-item">
+        <div class="carousel-item item">
           <img class="third-slide" src="{% static 'img/chicago.jpg'%}" alt="Third slide">
           <div class="container">
             <div class="carousel-caption d-none d-md-block text-right">
@@ -109,7 +109,7 @@
     <div class="mainEntrance">
     <div class="container">
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-lg-3">
         <div class="desc"><I class="fa fa-bar-chart" aria-hidden="true"></I>
           <h2> Data Stories </h2>
           <p> Discover findings about racial disparities in criminal justice system </p>
@@ -117,17 +117,17 @@
         </div>
       </div>
 
-      <div class="col-md-3">
+      <div class="col-lg-3">
         <div class="desc"><I class="fa fa-sliders" aria-hidden="true"></I>               
           <h2> Data Visualization </h2>
           <p> Explore visualization tools developed on criminal justice data </p>
           <form method="POST">
-            <a class="btn btn-lg btn-default" role="button" href="./templates/datavisual.html">Enter</a>
+            <a class="btn btn-lg btn-default" role="button" href="datavisual">Enter</a>
           </form>
         </div>
       </div>
 
-      <div class="col-md-3">
+      <div class="col-lg-3">
         <div class="desc"><I class="fa fa-table" aria-hidden="true"></I>               
           <h2> Data Portal </h2>
           <p> View description of and download data sets in our database </p>
@@ -135,7 +135,7 @@
         </div>
       </div>
 
-      <div class="col-md-3">
+      <div class="col-lg-3">
         <div class="desc"><I class="fa fa-users" aria-hidden="true"></I>               
         <h2> Community </h2>
         <p> Join our community and hear the stories of community members </p>
@@ -170,8 +170,7 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="{% static 'js/ie10-viewport-bug-workaround.js'%}"></script>
     <!-- Javascript for four icons -->  
-    <script src="{% static 'js/jquery-1.11.3.min.js'%}"></script>   
-    <script src="{% static 'js/bootstrap.min.js'%}"></script>  
+    <script src="{% static 'js/jquery-1.11.3.min.js'%}"></script>
     <script src="{% static 'js/angular.min.js'%}"></script>
       
   </body>

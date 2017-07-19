@@ -9,6 +9,12 @@ import requests
 def index(request):
     return render(request, 'index.html')
 
+def datavisual(request):
+    return render(request, 'datavisual.html')
+
+def police(request):
+    return render(request, 'policing.html')
+
 def db(request):
 
     greeting = Greeting()
