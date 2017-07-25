@@ -340,14 +340,110 @@ $(function(){
         };        
         barchart2.setOption(option5);
     });
+    
+    setTimeout(function(){
+        window.onresize = function() {
+            barchart1.resize();
+            piechart1.resize();
+            piechart2.resize();
+            piechart3.resize();
+            piechart4.resize();
+            piechart5.resize();
+            barchart2.resize();
+        }
+    },200)
 });
 
-setTimeout(function (){
-    window.onresize = function () {
-        barchart1.resize();
-        piechart1.resize();
-        piechart2.resize();
-        piechart3.resize();
-        barchart2.resize();
-    }
-},200)
+var piechart4 = echarts.init(document.getElementById('piechart4'));
+var option6 = {
+    tooltip: {
+        trigger: 'item',
+        formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    legend: {
+        orient: 'vertical',
+        x: 'left',
+        data:['White','Black','Asian','Hispanic','Other']
+    },
+    series: [
+        {
+            name:'Composition',
+            type:'pie',
+            radius: ['50%', '70%'],
+            avoidLabelOverlap: false,
+            label: {
+                normal: {
+                    show: false,
+                    position: 'center'
+                },
+                emphasis: {
+                    show: true,
+                    textStyle: {
+                        fontSize: '30',
+                        fontWeight: 'bold'
+                    }
+                }
+            },
+            labelLine: {
+                normal: {
+                    show: false
+                }
+            },
+            data:[
+                {value:22139, name:'Asian'},
+                {value:27360, name:'Black'},
+                {value:626, name:'Other'},
+                {value:11905, name:'Hispanic'},
+                {value:146829, name:'White'}
+            ]
+        }
+    ]
+};
+piechart4.setOption(option6);
+
+var piechart5 = echarts.init(document.getElementById('piechart5'));
+var option7 = {
+    tooltip: {
+        trigger: 'item',
+        formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    legend: {
+        orient: 'vertical',
+        x: 'left',
+        data:['White','Black','Asian','Hispanic','Other']
+    },
+    series: [
+        {
+            name:'Composition',
+            type:'pie',
+            radius: ['50%', '70%'],
+            avoidLabelOverlap: false,
+            label: {
+                normal: {
+                    show: false,
+                    position: 'center'
+                },
+                emphasis: {
+                    show: true,
+                    textStyle: {
+                        fontSize: '30',
+                        fontWeight: 'bold'
+                    }
+                }
+            },
+            labelLine: {
+                normal: {
+                    show: false
+                }
+            },
+            data:[
+                {value:22139, name:'Asian'},
+                {value:27360, name:'Black'},
+                {value:626, name:'Other'},
+                {value:11905, name:'Hispanic'},
+                {value:146829, name:'White'}
+            ]
+        }
+    ]
+};
+piechart5.setOption(option7);
