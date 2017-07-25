@@ -1,20 +1,18 @@
-# python-getting-started
+# Open Data Portal For Champaign Criminal Justice System
 
-A barebones Python app, which can easily be deployed to Heroku.
-
-This application supports the [Getting Started with Python on Heroku](https://devcenter.heroku.com/articles/getting-started-with-python) article - check it out.
+A Python Django app deployed to Heroku
 
 ## Running Locally
 
 Make sure you have Python [installed properly](http://install.python-guide.org).  Also, install the [Heroku Toolbelt](https://toolbelt.heroku.com/) and [Postgres](https://devcenter.heroku.com/articles/heroku-postgresql#local-setup).
 
 ```sh
-$ git clone git@github.com:heroku/python-getting-started.git
-$ cd python-getting-started
+$ git clone git@github.com:yhung133/racial-justice-app.git
+$ cd racial-justice-app
 
 $ pip install -r requirements.txt
 
-$ createdb python_getting_started
+$ createdb racial-justice-app
 
 $ python manage.py migrate
 $ python manage.py collectstatic
