@@ -1,0 +1,33 @@
+.view {
+	margin: 10px; width: 100%; height: 330px; text-align: center; overflow: hidden; float: left; position: relative; cursor: default; box-shadow: 1px 1px 2px #e6e6e6;
+}
+.view .mask {
+	left: 0px; top: 0px; width: 100%; height: 100%; overflow: hidden; position: absolute;
+}
+.view .content {
+	left: 0px; top: 0px; width: 100%; height: 100%; overflow: hidden; position: absolute;
+}
+.view img {
+	left: -20em; display: block; position: absolute;
+}
+.view h2 {
+	background: rgba(0, 0, 0, 0.8); margin: 20px 0px 0px; padding: 10px; text-align: center; color: rgb(255, 255, 255); text-transform: uppercase; font-size: 2em; position: relative;
+}
+.view p {
+	padding: 20px; text-align: center; color: rgb(255, 255, 255); font-size: 1.2em; position: relative;
+}
+.view a.info {
+	background: rgb(0, 113, 226); padding: 7px 14px; color: rgb(255, 255, 255); text-decoration: none; display: inline-block;
+}
+.view a.info:hover {
+	background-color: rgb(39, 55, 79);
+}
+@media all and (max-width:991px)
+{
+.view {
+	height: 280px;
+}
+.view img {
+	left: 0px; display: block; position: absolute;
+}
+}
