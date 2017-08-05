@@ -2,6 +2,6 @@ venv
 *.pyc
 staticfiles
 .env
-arrests.json
+rawdata/arrests.json
 *.json
 db.sqlite3
