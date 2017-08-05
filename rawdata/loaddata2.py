@@ -27,7 +27,7 @@ with open(csv_path, 'r') as csvfile:
                     if len(date[k]) == 1:
                         date[k] = '0' + date[k]
                 row[j] = date[2] + '-' + date[0] + '-' + date[1]
-            if fields[j] == "age" or == "arrest_officer_code":
+            if fields[j] == "age" or fields[j] == "arrest_officer_code":
                 if row[j] == '':
                     row[j] = 0
             tempdict["fields"][fields[j]] = row[j]
