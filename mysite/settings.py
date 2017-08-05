@@ -133,6 +133,11 @@ STATICFILES_DIRS = (
     os.path.join(PROJECT_ROOT, 'static'),
 )
 
+# Extra places for dumpdata/loaddata to find fixtures
+FIXTURE_DIRS = (
+   os.path.join(PROJECT_ROOT, 'fixtures'),
+)
+
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
