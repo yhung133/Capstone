@@ -1,5 +1,6 @@
 from openpyxl import load_workbook
 import json
+import io
 
 data = []
 json_path = "jailbook.json"
@@ -14,7 +15,7 @@ for i in range(0,len(sheetnames)):
         tempdict["model"] = "racialjustice.jailbook"
         tempdict["pk"] = count
         count += 1
-        fields = ["book_date","book_time","brith_date","age","gender","race","number","direction",
+        fields = ["book_date","book_time","birth_date","age","gender","race","number","direction",
                   "street","suffix","city","state","zipcode","statute","description","court_date",
                   "release_date","bond"]
         tempdict["fields"] = {}
@@ -31,13 +32,19 @@ for i in range(0,len(sheetnames)):
                     value = '0000-00-00'
             if j == 3:
                 try:
-                    value = int(row[0].split('/')[2]) - int(row[2].split('/')[2])
+                    v1 = int(row[0].internal_value.split('/')[2])
+                    v2 = int(row[2].internal_value.split('/')[2])
+                    value = v1 - v2
+                    if value > 100:
+                        value = 0
                 except:
                     value = 0
+            if value == '0000-00-00':
+                value = None
             tempdict["fields"][fields[j]] = value
         data.append(tempdict)
         
-print len(date)
+print len(data)
 
 with io.open(json_path, 'w', encoding = 'utf-8') as jsonfile:
     json_str = json.dumps(data, indent=4, sort_keys=True, separators=(',',':'), ensure_ascii=False)

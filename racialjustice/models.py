@@ -27,6 +27,7 @@ class Arrest(models.Model):
     more_than_one_charge = models.IntegerField()
     mvo = models.IntegerField()
 
+
 class Jailbook(models.Model):
     book_date = models.DateField()
     book_time = models.TextField()
@@ -35,7 +36,7 @@ class Jailbook(models.Model):
     gender = models.TextField()
     race = models.TextField()
     number = models.IntegerField()
-    direction = models.CharFiled(max_length=30)
+    direction = models.CharField(max_length=30)
     street = models.TextField()
     suffix = models.CharField(max_length=30)
     city = models.TextField()

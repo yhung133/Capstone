@@ -11,7 +11,7 @@ class Migration(migrations.Migration):
 
     dependencies = [
     ]
-
+'''
     operations = [
         migrations.CreateModel(
             name='Arrest',
@@ -48,3 +48,4 @@ class Migration(migrations.Migration):
             ],
         ),
     ]
+'''
