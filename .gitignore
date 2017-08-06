@@ -3,4 +3,5 @@ venv
 staticfiles
 .env
 *.json
+*.xlsx
 db.sqlite3

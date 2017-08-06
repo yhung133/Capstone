@@ -26,4 +26,27 @@ class Arrest(models.Model):
     jurisdiction = models.TextField()
     more_than_one_charge = models.IntegerField()
     mvo = models.IntegerField()
+
+class Jailbook(models.Model):
+    book_date = models.DateField()
+    book_time = models.TextField()
+    birth_date = models.DateField()
+    age = models.IntegerField()
+    gender = models.TextField()
+    race = models.TextField()
+    number = models.IntegerField()
+    direction = models.CharFiled(max_length=30)
+    street = models.TextField()
+    suffix = models.CharField(max_length=30)
+    city = models.TextField()
+    state = models.TextField()
+    zipcode = models.IntegerField()
+    statute = models.TextField()
+    description = models.TextField()
+    court_date = models.DateField()
+    release_date = models.DateField()
+    bond = models.FloatField()
+
+    
+    
     

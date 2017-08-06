@@ -13,6 +13,8 @@ urlpatterns = [
     url(r'^$', racialjustice.views.index, name='index'),
     url(r'^datavisual', racialjustice.views.datavisual, name='datavisual'),
     url(r'^police', racialjustice.views.police, name='police'),
+    url(r'^jail', racialjustice.views.jail, name='jail'),
+    url(r'^court', racialjustice.views.court, name='court'),
     url(r'^db', racialjustice.views.db, name='db'),
     url(r'^admin/', include(admin.site.urls)),
 ]

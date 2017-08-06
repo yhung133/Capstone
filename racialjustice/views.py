@@ -15,6 +15,12 @@ def datavisual(request):
 def police(request):
     return render(request, 'policing.html')
 
+def jail(request):
+    return render(request, 'jail.html')
+
+def court(request):
+    return render(request, 'court.html')
+
 def db(request):
 
     greeting = Greeting()

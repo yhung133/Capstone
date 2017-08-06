@@ -26,7 +26,10 @@ with open(csv_path, 'r') as csvfile:
                 for k in range(0,3):
                     if len(date[k]) == 1:
                         date[k] = '0' + date[k]
-                row[j] = date[2] + '-' + date[0] + '-' + date[1]
+                if row[j+17] == "Urbana":
+                    row[j] = date[2] + '-' + date[1] + '-' + date[0]
+                else:
+                    row[j] = date[2] + '-' + date[0] + '-' + date[1]
             if fields[j] == "age" or fields[j] == "arrest_officer_code":
                 if row[j] == '':
                     row[j] = 0
