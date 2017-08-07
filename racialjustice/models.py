@@ -48,6 +48,7 @@ class Jailbook(models.Model):
     release_date = models.DateField(null=True)
     bond = models.FloatField(null=True)
 
+
     
     
     
